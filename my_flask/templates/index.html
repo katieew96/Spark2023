@@ -56,19 +56,19 @@
             <div class="form-group col-md-7">
                 <label for="first_name">Yearly Income:</label>
 
-                <input type="text" class="form-control input-sm" id="" placeholder="Income" />
+                <input type="text" class="form-control input-sm" id="" placeholder="Income" name="income"/>
 
             </div>
 
 
             <div class="form-group col-md-7">
                 <label for="mySelect">Monthly Expenses:</label>
-                <input type="text" class="form-control input-sm" id="" placeholder="Expenses" />
+                <input type="text" class="form-control input-sm" id="" placeholder="Expenses" name="expenses" />
             </div>
 
             <div class="form-group col-md-7">
-                <label for="mySelect">Principle investment:</label>
-                <input type="text" class="form-control input-sm" id="" placeholder="Expected" />
+                <label for="mySelect">Principal investment:</label>
+                <input type="text" class="form-control input-sm" id="" placeholder="Expected" name="principal"/>
             </div>
 
             <div class="form-group col-md-7">
@@ -76,25 +76,25 @@
                 <p>(income-expense)=monthly contribution</p>
 
 
-                <button id="button" type="button" onclick="display_chosen_option()">7%</button>
+                <button id="button" name="percent_income" type="button" onclick="display_chosen_option()" value="7">7%</button>
 
-                <button id="button" type="button"
-                    onclick="document.getElementById('mySelect').selectedIndex = '-1'">10%</button>
+                <button id="button" name="percent_income" type="button"
+                    onclick="document.getElementById('mySelect').selectedIndex = '-1'" value="10">10%</button>
 
-                <button id="button" type="button"
-                    onclick="document.getElementById('mySelect').selectedIndex = '-1'">12%</button>
+                <button id="button" name="percent_income" type="button"
+                    onclick="document.getElementById('mySelect').selectedIndex = '-1'" value="12">12%</button>
             </div>
             <div class="form-group col-md-7">
                 <label for="mySelect2">Annual Percentage Rate(APR):</label>
                 <br>
 
-                <button id="button" type="button" onclick="display_chosen_option()">7%</button>
+                <button id="button" name="apr" type="button" onclick="display_chosen_option()" value="7">7%</button>
 
-                <button id="button" type="button"
-                    onclick="document.getElementById('mySelect').selectedIndex = '-1'">10%</button>
+                <button id="button" name="apr" type="button"
+                    onclick="document.getElementById('mySelect').selectedIndex = '-1'" value="10">10%</button>
 
-                <button id="button" type="button"
-                    onclick="document.getElementById('mySelect').selectedIndex = '-1'">20%</button>
+                <button id="button" name="apr" type="button"
+                    onclick="document.getElementById('mySelect').selectedIndex = '-1'" value="20">20%</button>
             </div>
         </div>
 

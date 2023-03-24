@@ -10,4 +10,35 @@ def invest_calculator():
 
 @app.route('/form', methods=["POST"])
 def form():
-    pass
+    income = request.method #int(input("Enter Income"))
+    expense = 0 #int(input("Enter Expence"))
+    principal = 0
+    percent_income = 0 
+    if request.method == 'POST':
+        if request.form['percent_income'] == '7':
+            percent_income = 7
+        elif request.form['percent_income'] == '10':
+            percent_income = 10
+        else:
+            percent_income = 12 
+            
+    yearly_contribution = percent_income * (income - 12 * expense)
+    rate_of_interest = 0
+    if request.method == 'POST':
+        if request.form['apr'] == '7':
+            rate_of_interest = 7
+        elif request.form['apr'] == '10':
+            rate_of_interest = 10
+        else:
+            rate_of_interest = 20
+    increment = 0
+    principal = 0
+    
+    
+    accumulated_value = 0
+    years = []
+    yearly_earning = []
+    for i in range(0, 21):
+        accumulated_value += (principal+(increment * yearly_contribution))*((1+(rate_of_interest/12))**(12*1))
+        yearly_earning.append(accumulated_value) 
+        yearlys.append(i) 
