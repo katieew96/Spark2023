@@ -9,7 +9,7 @@ We focused on Finance for our project. Decided that since we are all graduating 
 We used HTML, CSS, Bootstrap, Flask, Python, JavaScript and GitHub for technologies.
 
 # How to use the index.html file:
-All of the code is on the single file. You open it through your browser. Then you add user info of your yearly income, monthly expenses, and what you are planning on investing. Next you click the submit button and a new page will pup up with feedback.
+All of the code is on the single file. You open it through your browser. Then you add user info of your yearly income, monthly expenses, and what you are planning on investing. Next you click the submit button and a new page will pop up with results.
 
 ### Calculations used
 income = int(input("Enter Income"))
