@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+
+<ol>
+    <!-- For loop logic of jinja template -->
+    {%for i in range(0, len)%}
+      
+        <li>{{calculations[i]}}</li>
+    {%endfor%}
+      
+</ol>
+
+{% endblock %}
