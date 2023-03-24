@@ -1,7 +1,7 @@
 ### Spark2023
 ### Finance/Education/Health
 
-#Calculations
+# Calculations
 income = int(input("Enter Income"))
 expense = int(input("Enter Expence"))
 Principal = 0
