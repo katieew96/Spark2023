@@ -1,4 +1,4 @@
-## Spark2023
+# Spark2023
 ### Finance/Education/Health
 
 # Calculations
@@ -25,4 +25,4 @@ def investment_function(income, expence, Principal, yearly_contribution, number_
 Team members: Ekta Patelekta, Katie Warren & Joel Montano
 
 ## How to use the index.html file:
-All of the code is on the single file. You open it on a live server when on an IDE similar to Visual Studio Code. Then you add user info of your yearly income, monthly expenses and what you are planning on investing. Next you click the submit button and wait for an feedback.
+All of the code is on the single file. You open it through your browser. Then you add user info of your yearly income, monthly expenses, and what you are planning on investing. Next you click the submit button and a new page will pup up with feedback.
