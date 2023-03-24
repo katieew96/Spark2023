@@ -3,10 +3,8 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route('/')
-def invest_calculator():
-    title = "Investment Calculator"
-    return render_template("index.html", title = title) 
-
+def index():
+    return render_template("index.html")
 
 @app.route('/form', methods=["POST"])
 def form():
@@ -41,10 +39,10 @@ def form():
     for i in range(0, 21):
         accumulated_value += (principal+(increment * yearly_contribution))*((1+(rate_of_interest/12))**(12*1))
         yearly_earning.append(accumulated_value) 
-        yearlys.append(i) 
+        years.append(i) 
     
     outputs = zip(years, yearly_earning) 
-    ouput_length = len(output)
+    ouput = len(outputs)
     
     return render_template("calculation.html", len = len(outputs), calculations = outputs)
 
